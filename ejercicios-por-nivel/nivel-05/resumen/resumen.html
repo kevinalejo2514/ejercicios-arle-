@@ -1,0 +1,9 @@
+<h2>Tu pedido: {{ carrito.cantidad() }}</h2>
+<ul>
+  @for (p of carrito.lista(); track $index) {
+    <app-item-pedido
+      [producto]="p"
+      (quitar)="carrito.quitar($event)"
+    />
+  }
+</ul>

@@ -1,0 +1,11 @@
+<h2>Tu pedido</h2>
+<p>
+  {{ carrito.cantidad() }} productos ·
+  ${{ carrito.total() }}
+</p>
+@for (p of productos; track p.id) {
+  <button (click)="carrito.agregar(p)">
+    + {{ p.nombre }}
+  </button>
+}
+<button (click)="carrito.vaciar()">Vaciar</button>

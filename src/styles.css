@@ -1,0 +1,15 @@
+/* Estilos globales de Pídelo U (criterios E08 de la guía: contraste >= 4.5:1 y botones >= 24x24 px) */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #111827;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 1rem;
+}
+
+button {
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}

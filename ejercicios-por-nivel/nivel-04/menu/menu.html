@@ -1,0 +1,7 @@
+<h2>Menú de hoy</h2>
+@for (p of productos; track p.id) {
+  <app-producto-card
+    [producto]="p"
+    [destacado]="p.id === 2"
+  />
+}

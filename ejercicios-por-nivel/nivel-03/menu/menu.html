@@ -1,0 +1,7 @@
+<h2>Menú de hoy</h2>
+@for (p of productos; track p.id) {
+  <p>
+    {{ p.nombre }} · ${{ p.precio }}
+    <button (click)="carrito.agregar(p)">Agregar</button>
+  </p>
+}

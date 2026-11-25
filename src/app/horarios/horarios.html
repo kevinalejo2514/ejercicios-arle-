@@ -1,0 +1,9 @@
+<h2>Horarios</h2>
+@for (h of semana; track h.dia) {
+  <app-horario-card
+    [dia]="h.dia"
+    [abre]="h.abre"
+    [cierra]="h.cierra"
+    [especial]="h.dia === 'Sábado'"
+  />
+}

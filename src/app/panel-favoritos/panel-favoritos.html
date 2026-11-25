@@ -1,0 +1,7 @@
+<h2>Mis favoritos: {{ favoritos.cuantos() }}</h2>
+@for (p of productos; track p.id) {
+  <button (click)="favoritos.marcar(p.id)">
+    Marcar {{ p.nombre }}
+  </button>
+}
+<button (click)="favoritos.limpiar()">Limpiar</button>
